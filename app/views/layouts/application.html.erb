@@ -11,9 +11,12 @@
   </head>
 
   <body>
+    <section>
+      <p id="choice">ここに日時を表示します</p>
+    </section>
     <script>
       'use strict';
-      window.alert('アプリ連携が完了しました。');
+      document.getElementById('choice').textContent = new Date();
     </script>
     <%= yield %>
   </body>
