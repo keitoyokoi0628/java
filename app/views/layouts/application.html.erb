@@ -12,11 +12,16 @@
 
   <body>
     <section>
-      <p id="choice">ここに日時を表示します</p>
+
     </section>
     <script>
       'use strict';
-      document.getElementById('choice').textContent = new Date();
+
+    if(window.confirm('ゲームスタート！準備はいい？')) {
+      console.log('ゲームを開始します。');
+    } else {
+      console.log('ゲームを終了します。');
+    }
     </script>
     <%= yield %>
   </body>
