@@ -17,11 +17,8 @@
     <script>
       'use strict';
 
-    if(window.confirm('ゲームスタート！準備はいい？')) {
-      console.log('ゲームを開始します。');
-    } else {
-      console.log('ゲームを終了します。');
-    }
+      let answer = window.prompt('ヘルプを見ますか？');
+      console.log(answer);
     </script>
     <%= yield %>
   </body>
