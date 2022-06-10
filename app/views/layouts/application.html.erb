@@ -12,7 +12,7 @@
 
   <body>
     <section>
-
+      <p id="output"></p>
     </section>
     <script>
       'use strict';
@@ -23,6 +23,8 @@
       }
 
       console.log('コーヒーメーカーの価格は' + total(25000) + '円（税込）です。');
+      document.getElementById('output').textContent = 'コーヒーメーカーの値段は' + total(150000) + '円です。';
+
     </script>
     <%= yield %>
   </body>
