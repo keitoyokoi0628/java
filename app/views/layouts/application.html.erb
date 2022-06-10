@@ -13,7 +13,10 @@
   <body>
     <section>
       <p id="output"></p>
+      <p id="output2"></p>
+      <p id="output3"></p>
     </section>
+
     <script>
       'use strict';
 
@@ -23,7 +26,11 @@
       }
 
       console.log('コーヒーメーカーの価格は' + total(25000) + '円（税込）です。');
+
       document.getElementById('output').textContent = 'コーヒーメーカーの値段は' + total(150000) + '円です。';
+      document.getElementById('output2').textContent = 'カフェラテの値段は' + total(9000) + '円です!!!';
+      document.getElementById('output3').textContent = 'ケーキの値段は' + total(20) + '円です？';
+
 
     </script>
     <%= yield %>
