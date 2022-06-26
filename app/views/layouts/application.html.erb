@@ -11,18 +11,19 @@
   </head>
 
   <body>
+    <!--HTMLで表示するところ-->
     <section>
-
+      <form action="#" id="form">
+        <input type="submit" value="検索">
+      </form>
     </section>
 
     <script>
     'use strict';
 
-    let jsbook = {title: 'JavaScript入門', price: 2500, stock: 3};
-
-    console.log(jsbook);
-    console.log(jsbook.title);
-    console.log(jsbook['price']);
+    document.getElementById('form').onsubmit = function() {
+      console.log('クリックされました');
+    };
 
     </script>
     <%= yield %>
