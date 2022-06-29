@@ -13,21 +13,16 @@
   <body>
     <!--HTMLで表示するところ-->
     <section>
-      <p>最終アクセス日時：<span id="time"></span></p>
+      <p>円周率は <span id="pi"></span>です。</p>
+      <p>普通に切り捨てると<span id="floor"></span></p>
     </section>
 
     <script>
     'use strict';
-    // 日時を取得↓
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = now.getMonth();
-    const date = now.getDate();
-    const hour = now.getHours();
-    const min = now.getMinutes();
 
-    const output = `${year}/${month + 1}/${date} ${hour}:${min}`;
-    document.getElementById('time').textContent = output;
+    document.getElementById('pi').textContent = Math.PI;
+    document.getElementById('floor').textContent = Math.floor(Math.PI);
+
     </script>
     <%= yield %>
   </body>
