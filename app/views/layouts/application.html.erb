@@ -15,6 +15,7 @@
     <section>
       <p>円周率は <span id="pi"></span>です。</p>
       <p>普通に切り捨てる!=<span id="floor"></span></p>
+      <p>小数第2位できりすてる!= <span id="output"></span></p>
     </section>
 
     <script>
@@ -28,6 +29,7 @@
       return Math.floor(num * mover) / mover;
     }
 
+    document.getElementById('output').textContent = point(Math.PI, 2);
     </script>
     <%= yield %>
   </body>
