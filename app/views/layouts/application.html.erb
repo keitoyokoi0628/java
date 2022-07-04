@@ -13,7 +13,7 @@
   <body>
     <!--HTMLで表示するところ-->
     <section>
-
+      <p>いまから<span id="timer"></span>以内に注文すると50％オフ！！！</p>
     </section>
 
     <script>
@@ -37,6 +37,10 @@
     goal.setSeconds(59);
 
     console.log(countdown(goal));
+    const counter = countdown(goal);
+    const time = `${counter[1]}時間${counter[2]}分${counter[3]}秒`;
+    document.getElementById('timer').textContent = time;
+
 
     </script>
     <%= yield %>
