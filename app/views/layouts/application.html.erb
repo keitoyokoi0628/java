@@ -13,23 +13,14 @@
   <body>
     <!--HTMLで表示するところ-->
     <section>
-      <p>円周率は <span id="pi"></span>です。</p>
-      <p>普通に切り捨てる!=<span id="floor"></span></p>
-      <p>小数第2位できりすてる!= <span id="output"></span></p>
+      
     </section>
 
     <script>
     'use strict';
-
-    document.getElementById('pi').textContent = Math.PI;
-    document.getElementById('floor').textContent = Math.floor(Math.PI);
-
-    function point(num, digit) {
-      const mover = 10 ** digit;
-      return Math.floor(num * mover) / mover;
+    function countdown(due) {
+      
     }
-
-    document.getElementById('output').textContent = point(Math.PI, 2);
     </script>
     <%= yield %>
   </body>
