@@ -3,25 +3,45 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 @import "simple_calendar";
 
+// シンプルカレンダーのカスタマイズ用
 .simple-calendar {
+
   .day {}
 
-  .wday-0 {}
+  // 日曜日
+  .wday-0 {
+    color: white;
+    background-color: red;
+  }
+  // 月曜日
   .wday-1 {}
+  // 火曜日
   .wday-2 {}
+  // 水曜日
   .wday-3 {}
+  // 木曜日
   .wday-4 {}
+  // 金曜日
   .wday-5 {}
-  .wday-6 {}
+  // 土曜日
+  .wday-6 {
+    color: white;
+    background-color: blue;
+  }
+  // 本日の日付
+  .today {
+    background-color: #66CC33;
+  }
 
-  .today {}
   .past {}
   .future {}
 
   .start-date {}
 
   .prev-month {}
-  .next-month { }
+
+  .next-month {}
+
   .current-month {}
 
   .has-events {}
